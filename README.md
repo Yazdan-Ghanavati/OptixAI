@@ -36,9 +36,10 @@ The model was trained on a high-resolution OCT dataset and evaluated based on cl
 
 </div>
 
-### 📊 Performance Visualization
 
 <div align="center">
+  
+### 📊 Performance Visualization
 
 ![Confusion Matrix](Images/Confusion_Matrix.png)
 
@@ -47,7 +48,6 @@ The model was trained on a high-resolution OCT dataset and evaluated based on cl
 
 > **Clinical Interpretation:** The confusion matrix demonstrates high sensitivity in identifying **DME** and **CNV** cases. The minimal overlap between classes indicates that the model has successfully learned the distinct morphological features of retinal pathologies, ensuring reliable decision support for practitioners.
 
----
 
 ---
 
@@ -67,6 +67,42 @@ Optix was built using an industry-standard stack to ensure scalability and clini
 </div>
 
 ---
+
+
+## 🔬 Architecture & Training
+The classification engine is built on a transfer learning backbone, optimized for medical feature extraction.
+
+*   **Backbone:** `MobileNetV3Large` (Pre-trained on ImageNet for efficient feature detection).
+*   **Custom Head:** Global Average Pooling followed by a `Dense` layer with `Softmax` activation for 4-class classification.
+*   **Training Specs:** 
+    *   **Hardware:** Trained on an `NVIDIA GTX 1660 Ti`.
+    *   **Duration:** ~2 hours and 44 minutes for 15 epochs.
+    *   **Optimization:** Adam optimizer with categorical cross-entropy loss.
+
+<div align="center">
+
+### 📈 Training Progress
+![Training Loss & Accuracy](Images/Loss_Plot.png)
+
+*Visualizing the convergence of training and validation loss over 15 epochs.*
+
+</div>
+
+---
+
+## 📁 Dataset & Citations
+The model was trained using the **Labeled Optical Coherence Tomography (OCT)** dataset, containing thousands of validated scans.
+
+> **Primary Citation:** 
+> Kermany D, Goldbaum M, Cai W et al. *Identifying Medical Diagnoses and Treatable Diseases by Image-Based Deep Learning.* **Cell.** 2018; 172(5):1122-1131. [doi:10.1016/j.cell.2018.02.010](https://doi.org/10.1016/j.cell.2018.02.010).
+
+---
+
+## 🛡️ CDSS & XAI Integration
+Optix is designed as a **Clinical Decision Support System (CDSS)**. It does not operate as a "black box" but as a collaborative tool:
+
+*   **XAI (Explainable AI):** Using **Grad-CAM**, the system maps the neural network's focus to the retinal layers, allowing doctors to verify the AI's logic against clinical hallmarks like subretinal fluid or drusen deposits.
+*   **Clinical RAG:** By integrating a **Retrieval-Augmented Generation** pipeline, the AI assistant provides answers grounded in established medical guidelines, reducing the risk of model hallucination in a high-stakes environment.
 
 ## 🚀 Key Features
 *   **Automated OCT Screening:** High-speed classification of the four primary retinal categories.
