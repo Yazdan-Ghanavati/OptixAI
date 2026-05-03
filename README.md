@@ -46,3 +46,30 @@ The model was trained on a high-resolution OCT dataset and evaluated based on cl
 
 
 > **Clinical Interpretation:** The confusion matrix demonstrates high sensitivity in identifying **DME** and **CNV** cases. The minimal overlap between classes indicates that the model has successfully learned the distinct morphological features of retinal pathologies, ensuring reliable decision support for practitioners.
+
+---
+
+---
+
+## 🛠️ Technology Stack
+Optix was built using an industry-standard stack to ensure scalability and clinical accuracy.
+
+<div align="center">
+
+| Layer | Technologies |
+| :--- | :--- |
+| **Deep Learning** | `TensorFlow` `Keras` `OpenCV` |
+| **Explainable AI** | `Grad-CAM` `Matplotlib` `NumPy` |
+| **LLM & RAG** | `Google Gemini 3.1 Flash` `Clinical RAG` |
+| **Frontend/UI** | `Streamlit` `HTML5/CSS3` |
+| **Environment** | `Python 3.10+` `GitHub` |
+
+</div>
+
+---
+
+## 🚀 Key Features
+*   **Automated OCT Screening:** High-speed classification of the four primary retinal categories.
+*   **Explainable Heatmaps:** Visualizes the specific regions triggering the AI's decision.
+*   **Context-Aware Consultation:** A built-in clinical assistant that answers follow-up questions using validated medical guidelines.
+*   **Deployment Ready:** Built with a modular architecture ready for cloud deployment.
