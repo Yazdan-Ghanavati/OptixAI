@@ -22,17 +22,27 @@ Optix uses a multi-layered approach to move from a raw image to a clinical recom
 3. **Clinical Interpretation:** A Retrieval-Augmented Generation (RAG) system feeds clinical guidelines into **Gemini 3.1 Flash**, providing an evidence-based assistant for follow-up questions.
 
 ---
-
 ## 📊 Model Performance
 The model was trained on a high-resolution OCT dataset and evaluated based on clinical precision.
+
+<div align="center">
+
 
 | Metric | Score |
 | :--- | :--- |
 | **Accuracy** | 94.8% |
 | **F1-Score** | 0.95 |
-| **Inference Speed** | 1.9s |
+| **Inference Speed** | ~2.026s |
+
+</div>
 
 ### 📊 Performance Visualization
-![Confusion Matrix](path/to/your/confusion_matrix.png)
+
+<div align="center">
+
+![Confusion Matrix](Images/Confusion_Matrix.png)
+
+</div>
+
 
 > **Clinical Interpretation:** The confusion matrix demonstrates high sensitivity in identifying **DME** and **CNV** cases. The minimal overlap between classes indicates that the model has successfully learned the distinct morphological features of retinal pathologies, ensuring reliable decision support for practitioners.
