@@ -109,3 +109,36 @@ Optix is designed as a **Clinical Decision Support System (CDSS)**. It does not 
 *   **Explainable Heatmaps:** Visualizes the specific regions triggering the AI's decision.
 *   **Context-Aware Consultation:** A built-in clinical assistant that answers follow-up questions using validated medical guidelines.
 *   **Deployment Ready:** Built with a modular architecture ready for cloud deployment.
+
+
+---
+
+## 🤝 Connect & Collaborate
+I am a Data Scientist and AI Developer specializing in Healthcare & Computer Vision. I am open to job opportunities, research collaborations, and discussions regarding the future of AI in Ophthalmology.
+
+<div align="center">
+
+### 📩 Request Full Access
+The **Clinical Suite** (including the Grad-CAM XAI engine and the Gemini-powered RAG assistant) is available for demonstration and review by hiring managers and clinical researchers.
+
+**[Click here to contact me on LinkedIn](https://www.linkedin.com/in/yazdan-ghanavati/)**
+
+</div>
+
+---
+
+## 📜 How to Cite this Project
+If you use this project's architecture or methodology, please use the following reference:
+
+> **[Yazdan Ghanavati]. (2026). Optix: AI-Powered Retinal Diagnostic Suite.** Available at: `https://github.com/Yazdan-Ghanavati/OptixAI`
+
+---
+
+
+
+
+<div align="center">
+  
+**Developed with ❤️ for the future of Retinal Health.**
+
+</div>
