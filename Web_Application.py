@@ -24,7 +24,7 @@ def load_my_model():
 
 # Update your prediction function
 def model_prediction(test_image_path):
-    model = load_my_model() # This now happens instantly after the first time
+    model = load_my_model() 
     img = tf.keras.utils.load_img(test_image_path, target_size=(224, 224))
     x = tf.keras.utils.img_to_array(img)
     x = np.expand_dims(x, axis=0)
@@ -43,8 +43,6 @@ app_mode = st.sidebar.selectbox("Select Page",["Home","About","Disease Identific
 
 #Main Page
 if(app_mode=="Home"):
-    # image_path = "home_page.jpeg"
-    # st.image(image_path,use_column_width=True)
     st.markdown("""
     ## **OCT Retinal Analysis Platform**
 
