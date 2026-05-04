@@ -9,10 +9,18 @@ Optix is a professional-grade **Clinical Decision Support System (CDSS)** design
 > **🚀 Try it yourself:** Don't have an OCT scan? We've provided a **[Sample Dataset Folder](./Sample_Scans)** in this repo. Download an image from there and upload it to the web app to see the diagnostic engine in action!
 
 ---
-
 ## 📸 System Preview
-![App Main Dashboard](Images/Full_App_Screenshot.png)
+
+<div align="center">
+  
+![App Main Dashboard](Images/main.png)
+
 *A unified interface for real-time OCT classification and clinical consultation.*
+
+
+</div>
+
+
 
 ---
 
