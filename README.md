@@ -1,7 +1,7 @@
-# 👁️ Optix: AI-Powered Retinal Diagnostic Suite
+# 👁️ Optix AI: AI-Powered Retinal Diagnostic Suite
 **Bridging the Gap Between Deep Learning and Clinical Interpretation.**
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge.svg)](https://your-app-link-here.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge.svg)](https://optix-ai.streamlit.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 > **Note:** This repository contains the **Core Engine**. For the full Clinical Suite (including Grad-CAM XAI and RAG integration), please contact the developer via LinkedIn.
