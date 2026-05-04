@@ -1,15 +1,19 @@
 # 👁️ Optix AI: AI-Powered Retinal Diagnostic Suite
 **Bridging the Gap Between Deep Learning and Clinical Interpretation.**
 
-
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://optix-ai.streamlit.app/)
 
-> **Note:** This repository contains the **Core Engine**. For the full Clinical Suite (including Grad-CAM XAI and RAG integration), please contact the developer via LinkedIn.
+## 📌 Project Overview
+Optix is a professional-grade **Clinical Decision Support System (CDSS)** designed to assist ophthalmologists in interpreting OCT scans. It bridges the gap between AI predictions and clinical trust by combining Deep Learning with **Explainable AI (XAI)** and **Medical RAG**.
+
+> **🚀 Try it yourself:** Don't have an OCT scan? We've provided a **[Sample Dataset Folder](./Sample_Scans)** in this repo. Download an image from there and upload it to the web app to see the diagnostic engine in action!
 
 ---
 
-## 📌 Project Overview
-Optix is a professional-grade medical imaging web application designed to assist ophthalmologists in detecting retinal diseases from OCT (Optical Coherence Tomography) scans. It doesn't just provide a diagnosis; it explains the "why" behind it using Clinical AI.
+## 📸 System Preview
+| 🖼️ AI Diagnosis & Heatmap | 💬 Clinical Assistant (RAG) |
+| :--- | :--- |
+| ![App Screenshot](Images/App_Main_View.png) | ![Chatbot Screenshot](Images/Chatbot_View.png) |
 
 
 ---
@@ -22,6 +26,7 @@ Optix uses a multi-layered approach to move from a raw image to a clinical recom
 3. **Clinical Interpretation:** A Retrieval-Augmented Generation (RAG) system feeds clinical guidelines into **Gemini 3.1 Flash**, providing an evidence-based assistant for follow-up questions.
 
 ---
+
 ## 📊 Model Performance
 The model was trained on a high-resolution OCT dataset and evaluated based on clinical precision.
 
@@ -105,18 +110,38 @@ To ensure robust generalization and prevent overfitting, the **109,309 high-reso
 > Kermany D, Goldbaum M, Cai W et al. *Identifying Medical Diagnoses and Treatable Diseases by Image-Based Deep Learning.* **Cell.** 2018; 172(5):1122-1131. [doi:10.1016/j.cell.2018.02.010](https://doi.org/10.1016/j.cell.2018.02.010).
 ---
 
-## 🛡️ CDSS & XAI Integration
-Optix is designed as a **Clinical Decision Support System (CDSS)**. It does not operate as a "black box" but as a collaborative tool:
+## 🛡️ Clinical Trust & Explainability (XAI)
+Optix is not a "black box." It provides visual and textual evidence for every diagnostic decision.
 
-*   **XAI (Explainable AI):** Using **Grad-CAM**, the system maps the neural network's focus to the retinal layers, allowing doctors to verify the AI's logic against clinical hallmarks like subretinal fluid or drusen deposits.
-*   **Clinical RAG:** By integrating a **Retrieval-Augmented Generation** pipeline, the AI assistant provides answers grounded in established medical guidelines, reducing the risk of model hallucination in a high-stakes environment.
+### 🔍 Neural Focus Mapping (Grad-CAM)
+The system highlights the specific morphological features (subretinal fluid, drusen, etc.) that triggered the AI's classification.
 
-## 🚀 Key Features
-*   **Automated OCT Screening:** High-speed classification of the four primary retinal categories.
-*   **Explainable Heatmaps:** Visualizes the specific regions triggering the AI's decision.
-*   **Context-Aware Consultation:** A built-in clinical assistant that answers follow-up questions using validated medical guidelines.
-*   **Deployment Ready:** Built with a modular architecture ready for cloud deployment.
+| 🏥 Original OCT Scan | 🔥 Neural Attention Heatmap |
+| :--- | :--- |
+| ![Original Scan](Images/Sample_Scan.png) | ![Heatmap View](Images/Sample_Heatmap.png) |
 
+### 📚 Evidence-Based Consultation (RAG)
+By grounding **Gemini 3.1 Flash** in clinical guidelines, the assistant provides management suggestions directly linked to the detected pathology.
+*   **Context-Aware:** The chatbot knows it is looking at a "CNV" or "DME" result.
+*   **Hallucination-Proof:** Answers are strictly synthesized from validated clinical context.
+
+---
+
+## 🚀 Features at a Glance
+*   **One-Click Screening:** Instant classification into 4 clinical categories.
+*   **Visual Evidence:** Automated Grad-CAM generation for every scan.
+*   **Dynamic RAG Chat:** Ask follow-up questions grounded in medical literature.
+*   **Cloud-Optimized:** Fully deployed and responsive on Streamlit Cloud.
+
+
+---
+
+## 💻 Local Setup (Optional)
+If you'd like to run OptixAI locally:
+1. **Clone the repo:** `git clone https://github.com/Yazdan-Ghanavati/OptixAI.git`
+2. **Install requirements:** `pip install -r requirements.txt`
+3. **Add API Key:** Create a `.env` file with your `GOOGLE_API_KEY`.
+4. **Run:** `streamlit run Web_Application.py`
 
 ---
 
