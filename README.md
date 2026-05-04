@@ -90,12 +90,19 @@ The classification engine is built on a transfer learning backbone, optimized fo
 
 ---
 
+
 ## 📁 Dataset & Citations
-The model was trained using the **Labeled Optical Coherence Tomography (OCT)** dataset, containing thousands of validated scans.
+The model was trained and validated using the [**Labeled Optical Coherence Tomography (OCT)**](https://www.kaggle.com/datasets/anirudhcv/labeled-optical-coherence-tomography-oct) dataset. 
+
+### 📊 Data Distribution
+To ensure robust generalization and prevent overfitting, the **109,309 high-resolution images** were partitioned using a strict split:
+
+*   **Training Set (70%):** ~76,516 images used for weight optimization.
+*   **Validation Set (20%):** ~21,862 images used for hyperparameter tuning and early stopping.
+*   **Test Set (10%):** ~10,931 images reserved for final unbiased performance evaluation.
 
 > **Primary Citation:** 
 > Kermany D, Goldbaum M, Cai W et al. *Identifying Medical Diagnoses and Treatable Diseases by Image-Based Deep Learning.* **Cell.** 2018; 172(5):1122-1131. [doi:10.1016/j.cell.2018.02.010](https://doi.org/10.1016/j.cell.2018.02.010).
-
 ---
 
 ## 🛡️ CDSS & XAI Integration
