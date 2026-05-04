@@ -11,10 +11,8 @@ Optix is a professional-grade **Clinical Decision Support System (CDSS)** design
 ---
 
 ## 📸 System Preview
-| 🖼️ AI Diagnosis & Heatmap | 💬 Clinical Assistant (RAG) |
-| :--- | :--- |
-| ![App Screenshot](Images/App_Main_View.png) | ![Chatbot Screenshot](Images/Chatbot_View.png) |
-
+![App Main Dashboard](Images/Full_App_Screenshot.png)
+*A unified interface for real-time OCT classification and clinical consultation.*
 
 ---
 
@@ -111,14 +109,13 @@ To ensure robust generalization and prevent overfitting, the **109,309 high-reso
 ---
 
 ## 🛡️ Clinical Trust & Explainability (XAI)
-Optix is not a "black box." It provides visual and textual evidence for every diagnostic decision.
-
-### 🔍 Neural Focus Mapping (Grad-CAM)
-The system highlights the specific morphological features (subretinal fluid, drusen, etc.) that triggered the AI's classification.
+Optix provides visual evidence to validate the AI's diagnostic logic.
 
 | 🏥 Original OCT Scan | 🔥 Neural Attention Heatmap |
 | :--- | :--- |
-| ![Original Scan](Images/Sample_Scan.png) | ![Heatmap View](Images/Sample_Heatmap.png) |
+| ![Original Scan](Images/OCT.png) | ![Heatmap View](Images/heatmap.png) |
+
+> **XAI Insight:** The heatmap above demonstrates the model's focus on subretinal fluid and pigment epithelial detachment, aligning with clinical hallmarks of the detected pathology.
 
 ### 📚 Evidence-Based Consultation (RAG)
 By grounding **Gemini 3.1 Flash** in clinical guidelines, the assistant provides management suggestions directly linked to the detected pathology.
