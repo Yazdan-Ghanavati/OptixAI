@@ -9,7 +9,7 @@
 ---
 
 ## 📌 Project Overview
-Optix is a professional-grade medical imaging tool designed to assist ophthalmologists in detecting retinal diseases from OCT (Optical Coherence Tomography) scans. It doesn't just provide a diagnosis; it explains the "why" behind it using Clinical AI.
+Optix is a professional-grade medical imaging web application designed to assist ophthalmologists in detecting retinal diseases from OCT (Optical Coherence Tomography) scans. It doesn't just provide a diagnosis; it explains the "why" behind it using Clinical AI.
 
 
 ---
