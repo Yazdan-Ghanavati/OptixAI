@@ -6,7 +6,7 @@
 ## 📌 Project Overview
 Optix is a professional-grade **Clinical Decision Support System (CDSS)** designed to assist ophthalmologists in interpreting OCT scans. It bridges the gap between AI predictions and clinical trust by combining Deep Learning with **Explainable AI (XAI)** and **Medical RAG**.
 
-> **🚀 Try it yourself:** Don't have an OCT scan? We've provided a **[Sample Dataset Folder](./Sample_Scans)** in this repo. Download an image from there and upload it to the web app to see the diagnostic engine in action!
+> **🚀 Try it yourself:** Don't have an OCT scan? We've provided a **[Sample Dataset Folder](./Sub_Sample_DB)** in this repo. Download an image from there and upload it to the web app to see the diagnostic engine in action!
 
 ---
 ## 📸 System Preview
