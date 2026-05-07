@@ -13,7 +13,7 @@ Optix is a professional-grade **Clinical Decision Support System (CDSS)** design
 
 <div align="center">
   
-![App Main Dashboard](Images/main.png)
+![App Main Dashboard](Images/Main.png)
 
 *A unified interface for real-time OCT classification and clinical consultation.*
 
