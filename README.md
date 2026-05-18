@@ -1,7 +1,8 @@
 # 👁️ Optix AI: AI-Powered Retinal Diagnostic Suite
 **Bridging the Gap Between Deep Learning and Clinical Interpretation.**
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://optix-ai.streamlit.app/)
+[![Streamlit App](https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit&logoColor=white)](https://optix-ai.streamlit.app/)
+
 
 ## 📌 Project Overview
 Optix is a professional-grade **Clinical Decision Support System (CDSS)** designed to assist ophthalmologists in interpreting OCT scans. It bridges the gap between AI predictions and clinical trust by combining Deep Learning with **Explainable AI (XAI)** and **Medical RAG**.
